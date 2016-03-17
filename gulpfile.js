@@ -6,6 +6,10 @@ var webserver     = require('gulp-webserver');
 var uglify        = require('gulp-uglify');
 var sourcemaps    = require('gulp-sourcemaps');
 var browserSync   = require('browser-sync').create();
+var browserify    = require('browserify');
+var babelify      = require('babelify');
+var source        = require('vinyl-source-stream');
+var buffer        = require('vinyl-buffer');
 
 var paths = {
   styles: {

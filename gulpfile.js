@@ -26,9 +26,9 @@ gulp.task('sass', function (){
   return gulp.src(paths.styles.files)
     .pipe(sourcemaps.init())
     .pipe(sass({
-        outputStyle: 'compressed',
-        sourceComments: 'map',
-        includePaths : [paths.styles.src]
+      outputStyle: 'compressed',
+      sourceComments: 'map',
+      includePaths : [paths.styles.src]
     }))
     .on('error', sass.logError)
     .pipe(postcss([
@@ -52,7 +52,7 @@ gulp.task('build', function () {
     .pipe(source('app.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init())
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest(paths.js.dest))
     .pipe(browserSync.stream());
@@ -60,6 +60,7 @@ gulp.task('build', function () {
 
 gulp.task('browser-sync', function() {
   browserSync.init({
+    // proxy: "something.dev"
     server: {
       baseDir: "./"
     }

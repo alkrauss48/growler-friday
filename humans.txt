@@ -9,11 +9,11 @@ Location:     Oklahoma City, OK, US
 
 
 /* THANKS */
-Name:         Staplegun Interactive Team - (Jack, Koty, Darren, Brandon, Aaron)
+Name:         Staplegun Interactive Team - (Jack, Koty, Darren, Aaron)
 
 
 /* SITE */
 Last update:  YYYY/MM/DD
-Standards:    HTML5, CSS3, JS
-Components:   Compass, Susy, Normalize, Modernizr, jQuery, Underscore
-Dev Tools:    SASS, Grunt, Browserify, Ruby Gems, Bower, NPM
+Standards:    HTML5, CSS3, ES6
+Components:   Susy, Normalize, Modernizr, jQuery
+Dev Tools:    Sass, Gulp, Bower, NPM

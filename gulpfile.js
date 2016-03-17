@@ -38,12 +38,20 @@ gulp.task('sass', function (){
     .pipe(browserSync.stream());
 });
 
-gulp.task('uglify', function() {
-  return gulp.src(paths.js.files)
+gulp.task('build', function () {
+  // app.js is your main JS file with all your module inclusions
+  return browserify({entries: './src/js/app.js', debug: true})
+    .transform("babelify", {
+      presets: ["es2015"],
+      plugins: ["transform-es3-member-expression-literals", "transform-es3-property-literals"]
+    })
+    .bundle()
+    .pipe(source('app.js'))
+    .pipe(buffer())
     .pipe(sourcemaps.init())
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest(paths.js.dest))
+    .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.stream());
 });
 
@@ -62,8 +70,8 @@ gulp.task('browser-sync', function() {
   });
 });
 
-gulp.task('default', ['browser-sync', 'sass', 'uglify'], function() {
+gulp.task('default', ['browser-sync', 'sass', 'build'], function() {
   gulp.watch(paths.styles.files,  ['sass']);
-  gulp.watch(paths.js.files,      ['uglify']);
+  gulp.watch(paths.js.files,      ['build']);
   gulp.watch("*.html").on('change', browserSync.reload);
 });

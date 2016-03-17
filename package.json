@@ -4,6 +4,9 @@
   "author": "Staplegun.US",
   "descripton": "A Boilerplate starter-kit for starting development right - the Staplegun way. Includes build automation and common CSS and JS libraries",
   "homepage": "https://github.com/Staplegun-US/site-start",
+  "scripts": {
+    "start": "npm install && bower install"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Staplegun-US/site-start"

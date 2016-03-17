@@ -12,13 +12,13 @@ var buffer        = require('vinyl-buffer');
 
 var paths = {
   styles: {
-    src: './src/sass',
-    files: './src/sass/**/*.scss',
-    dest: './dist/css'
+    src: './app/src/sass',
+    files: './app/src/sass/**/*.scss',
+    dest: './app/dist/css'
   },
   js: {
-    files: './src/js/*.js',
-    dest: './dist/js'
+    files: './app/src/js/*.js',
+    dest: './app/dist/js'
   }
 }
 
@@ -43,7 +43,7 @@ gulp.task('sass', function (){
 
 gulp.task('build', function () {
   // app.js is your main JS file with all your module inclusions
-  return browserify({entries: './src/js/app.js', debug: true})
+  return browserify({entries: './app/src/js/app.js', debug: true})
     .transform("babelify", {
       presets: ["es2015"],
       plugins: ["transform-es3-member-expression-literals", "transform-es3-property-literals"]
@@ -54,7 +54,7 @@ gulp.task('build', function () {
     .pipe(sourcemaps.init())
     // .pipe(uglify())
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulp.dest(paths.js.dest))
     .pipe(browserSync.stream());
 });
 

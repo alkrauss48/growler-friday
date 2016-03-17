@@ -2,7 +2,6 @@ var gulp          = require('gulp');
 var sass          = require('gulp-sass');
 var postcss       = require('gulp-postcss');
 var autoprefixer  = require('autoprefixer');
-var webserver     = require('gulp-webserver');
 var uglify        = require('gulp-uglify');
 var sourcemaps    = require('gulp-sourcemaps');
 var browserSync   = require('browser-sync').create();
@@ -57,13 +56,6 @@ gulp.task('build', function () {
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.stream());
-});
-
-gulp.task('server', function() {
-  gulp.src('.')
-    .pipe(webserver({
-      open: true,
-    }));
 });
 
 gulp.task('browser-sync', function() {

@@ -1,8 +1,6 @@
 site-start [![Dependency Status](https://gemnasium.com/Staplegun-US/site-start.svg)](https://gemnasium.com/Staplegun-US/site-start)
 ==========
 
-By [Staplegun Design](http://staplegun.us)
-
 A starter site kit that includes:
 
 * Common vendor scripts
@@ -13,9 +11,8 @@ A starter site kit that includes:
 * Build Automation (via gulp.js)
   * SASS compilation
   * Automatic CSS/JS minification
-  * Image optimization
   * Watching for changes
-  * Server for static site projects
+  * Browser-Sync
 * Common icon fonts pre-installed
 * Semantic index HTML file using proper [ARIA](http://w3c.github.io/aria-in-html) roles and settings
 * 404 Page (from HTML5 Boilerplate)
@@ -33,12 +30,8 @@ To use everything site-start ships with, you must have the following installed:
 ```bash
 git clone https://github.com/Staplegun-US/site-start.git
 cd site-start
-make install
+npm start
 ```
-
-Running `make install` will take care of installing the necessary gems, bower
-components, and node packages you'll need. Packages are only installed on a
-local project-level, not globally.
 
 ## Usage
 
@@ -46,75 +39,10 @@ The `index.html` comes preset with google analytics code,
 css/js file inclusions, base meta settings, and a basic semantic body to get you started. To make full
 use of the site-start though, you'll want to use gulp.
 
-## Running in Development
-
-```bash
-gulp         # This will build your assets and watch for changes
-
-# In a new terminal pane:
-gulp server
-
-# Now navigate to http://localhost:8000
-
-# For Dynamic Web Projects:
-# site-start is fully compatible with dynamic web projects (e.g. with PHP), but
-# you'll need to use a different server other than the one site-start ships with.
-```
-
-## Build Automation with gulp.js
-
 gulp Commands
 ```bash
-gulp           # Default command to build everything and watch for changes
-gulp images    # Optimize all new images
-gulp server    # Static server on port 8000
+gulp    # Build CSS and JS and watch for changes
 ```
-
-#### Sass
-Any .scss file you put in the root of the `src/sass` directory will get built to
-`dist/css`. Ideally you would centralize your imports in these files.
-
-By default, site-start ships with a main scss file for you.
-
-```bash
-src/sass/app.scss       # Main Sass, included in the body
-
-Built to: dist/css/app.css
-```
-
-
-#### Javascript
-Any .js file you put in the root of the `src/js` directory will get built to
-`dist/js`
-
-By default, site-start ships with a main js file for you.
-
-```bash
-src/js/app.js           # Main JS File, included in the body
-
-Built to: dist/js
-```
-
----
-
-With the default gulp task running, gulp will watch for changes in all the following files, and recompile after any changes:
-
-```
-src/sass/**/*.scss
-src/js/*.js
-```
-
-#### Images
-To optimize images:
-
-```
-gulp images
-
-Place in:  src/images
-Built to:  dist/images
-```
-
-Only images that have been modified will ever get re-optimized.
 
 ## Base Icon Fonts
 
@@ -165,14 +93,6 @@ List of all Icon Fonts
 | Linkedin      | `.base-icon-linkedin`       |
 | Instagram     | `.base-icon-instagram`      |
 
-## Package Managers
-
-site-start uses Node and Bower to manage dependencies:
-
-After adding any packages, run this to install/update them:
-```bash
-make install
-```
 
 ## License
 

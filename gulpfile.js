@@ -2,8 +2,6 @@ var gulp          = require('gulp');
 var sass          = require('gulp-sass');
 var postcss       = require('gulp-postcss');
 var autoprefixer  = require('autoprefixer');
-var imagemin      = require('gulp-imagemin');
-var newer         = require('gulp-newer');
 var webserver     = require('gulp-webserver');
 var uglify        = require('gulp-uglify');
 var sourcemaps    = require('gulp-sourcemaps');
@@ -18,10 +16,6 @@ var paths = {
   js: {
     files: './src/js/*.js',
     dest: './dist/js'
-  },
-  images: {
-    src: './src/images/**',
-    dest: './dist/images'
   }
 }
 
@@ -42,13 +36,6 @@ gulp.task('sass', function (){
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(browserSync.stream());
-});
-
-gulp.task('images', function(){
-  return gulp.src(paths.images.src)
-    .pipe(newer(paths.images.dest))
-    .pipe(imagemin())
-    .pipe(gulp.dest(paths.images.dest));
 });
 
 gulp.task('uglify', function() {
@@ -75,9 +62,8 @@ gulp.task('browser-sync', function() {
   });
 });
 
-gulp.task('default', ['browser-sync', 'sass', 'uglify', 'images'], function() {
+gulp.task('default', ['browser-sync', 'sass', 'uglify'], function() {
   gulp.watch(paths.styles.files,  ['sass']);
   gulp.watch(paths.js.files,      ['uglify']);
   gulp.watch("*.html").on('change', browserSync.reload);
-
 });

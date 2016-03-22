@@ -1,5 +1,8 @@
-import foo from "./lib/foo.js";
+import skipMenuHandler from "./lib/skipMenuHandler.js";
 
 $(document).ready(function(){
-  foo.test();
+  skipMenuHandler.init();
+
+  // Remove 'focus' styles when you click a link
+  $('a, button').mouseup(function() { this.blur() });
 });

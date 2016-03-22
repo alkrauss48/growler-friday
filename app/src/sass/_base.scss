@@ -5,3 +5,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+a, button {
+  &:focus {
+    outline: 1px solid #ff3333;
+  }
+}

@@ -11,3 +11,13 @@ a, button {
     outline: 1px solid #ff3333;
   }
 }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 4px solid gray;
+  padding: 0;
+  display: inline-block;
+  max-width: 100%;
+}

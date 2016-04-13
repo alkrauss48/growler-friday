@@ -1,6 +1,5 @@
 var gulp          = require('gulp');
 var sass          = require('gulp-sass');
-var uncss         = require('gulp-uncss');
 var postcss       = require('gulp-postcss');
 var autoprefixer  = require('autoprefixer');
 var uglify        = require('gulp-uglify');
@@ -32,9 +31,6 @@ gulp.task('sass', function (){
       includePaths : [paths.styles.src]
     }))
     .on('error', sass.logError)
-    .pipe(uncss({
-      html: ['*.html']
-    }))
     .pipe(postcss([
       autoprefixer({
         browsers: ['last 2 versions', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']

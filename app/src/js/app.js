@@ -1,4 +1,5 @@
 import skipMenuHandler from "./lib/skipMenuHandler.js";
+import isMobile from "./lib/isMobile.js";
 
 $(document).ready(function(){
   skipMenuHandler.init();

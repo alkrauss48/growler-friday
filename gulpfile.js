@@ -17,7 +17,7 @@ var paths = {
     dest: './app/dist/css'
   },
   js: {
-    files: './app/src/js/*.js',
+    files: './app/src/js/**/*.js',
     dest: './app/dist/js'
   }
 }

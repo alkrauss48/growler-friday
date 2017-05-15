@@ -7,6 +7,7 @@
     "normalize-scss": "~3.0.3",
     "susy": "~2.2.12",
     "es5-shim": "~4.5.9",
-    "breakpoint-sass": "~2.7.1"
+    "breakpoint-sass": "~2.7.1",
+    "jquery.countdown": "^2.2.0"
   }
 }

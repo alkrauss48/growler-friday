@@ -1,6 +1,5 @@
 .intro {
-  height: 30em;
-  padding: 1em;
+  padding: 4em 1em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -14,4 +13,17 @@
 .intro__heading-icon {
   width: 80px;
   display: inline-block;
+}
+
+.intro__title {
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: .5em 0;
+}
+
+.intro__tagline {
+  margin: 0;
+  font-size: .875em;
+  text-transform: uppercase;
 }

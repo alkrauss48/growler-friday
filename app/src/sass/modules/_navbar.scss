@@ -1,0 +1,12 @@
+.navbar {
+  position: fixed;
+  background-color: $dark;
+  width: 100%;
+  padding: .5em;
+}
+
+.navbar__logo {
+  display: block;
+  float: left;
+  width: 200px;
+}

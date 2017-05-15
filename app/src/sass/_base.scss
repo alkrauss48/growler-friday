@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 *, *:before, *:after {
@@ -24,4 +25,8 @@ hr {
 
 img {
   max-width: 100%;
+}
+
+#content {
+  padding-top: 80px;
 }

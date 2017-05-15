@@ -1,0 +1,17 @@
+.intro {
+  height: 30em;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $yellow;
+  background-image: linear-gradient(bottom left, $yellow 50%, darken($yellow,
+  13%) 50%);
+}
+
+.intro__heading-icon {
+  width: 80px;
+  display: inline-block;
+}

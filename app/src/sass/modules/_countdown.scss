@@ -1,10 +1,45 @@
 .countdown {
   padding: 2em;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: white;
   // background-image: linear-gradient(top left, white 50%, darken(white, 8%) 50%);
+}
+
+.countdown__clock {
+  display: flex;
+  max-width: 48em;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.countdown__item {
+  margin: 1em;
+  width: 25%;
+  display: inline-block;
+  border-radius: 3px;
+  color: $yellow;
+  padding: 1em;
+  background-color: lighten($dark, 25%);
+}
+
+.countdown__item + .countdown__item + .countdown__item + .countdown__item {
+  @include last;
+}
+
+.countdown__unit {
+  border-radius: 3px;
+  font-size: 2em;
+  margin: 0;
+  padding: 1em;
+  background-color: $dark;
+}
+
+.countdown__caption {
+  padding: .8em 0 0 0;
+  margin: 0;
+  font-size: 1.25em;
+}
+
+.countdown__title {
+
 }

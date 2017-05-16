@@ -1,0 +1,8 @@
+.social-media {
+  color: white;
+  text-decoration: none;
+  margin-left: .5em;
+  &:hover, &:focus {
+    color: $yellow;
+  }
+}

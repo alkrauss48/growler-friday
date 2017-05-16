@@ -1,0 +1,17 @@
+.find-a-growler {
+  padding: 2em 1em;
+}
+
+.find-a-growler__grid {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.find-a-growler__content {
+  margin-right: 1em;
+}
+
+.find-a-growler__heading {
+  max-width: 60%;
+}

@@ -1,0 +1,29 @@
+.form {
+  background-color: $yellow;
+  border-radius: 3px;
+  padding: 1em;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: .5em;
+}
+
+.form__input {
+  display: block;
+  margin: .5em 0;
+  padding: .25em;
+  border: 1px solid $dark;
+  border-radius: 3px;
+}
+
+.form__submit {
+  border: none;
+  color: $yellow;
+  padding: .5em 1.5em;
+  background-image: linear-gradient(
+    to bottom left,
+    $dark 50%,
+    darken($dark, 5%) 50%
+  );
+}

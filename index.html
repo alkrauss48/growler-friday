@@ -91,6 +91,36 @@
           </dl>
         </div>
       </section>
+      <section class="find-a-growler">
+        <div class="find-a-growler__grid container">
+          <div class="find-a-growler__content">
+            <h2 class="find-a-growler__heading">Find a Brewery Near You</h2>
+            <p class="find-a-growler__text">Currently only showing locations for Oklahoma zip codes.</p>
+            <form class="form" action="" method="post">
+              <div class="form__group">
+                <label class="form__label" for="zipCode">Zip Code</label>
+                <input class="form__input" type="text" name="zipCode" id="zipCode" value="">
+                <button class="form__submit"
+                  type="submit">Search </button>
+              </div>
+            </form>
+          </div>
+          <div class="map" id="map_canvas"></div>
+        </div>
+      </section>
+      <section class="latest-feeds">
+        <div class="latest-feeds__twitter">
+          <div class="container">
+            <h2 class="latest-feeds__heading">Latest #GrowlerFriday Feeds</h2>
+            <h3 class="latest-feeds__sub-heading">Twitter</h3>
+          </div>
+        </div>
+        <div class="latest-feeds__instagram">
+          <div class="container">
+            <h3 class="latest-feeds__sub-heading">Instagram</h3>
+          </div>
+        </div>
+      </section>
       <section class="join-the-movement">
         <div class="container">
           <h2 class="join-the-movement__heading">- Join The Movement -</h2>
@@ -109,6 +139,7 @@
       </aside>
     </footer>
 
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
     <script src="bower_components/es5-shim/es5-shim.min.js"></script>
@@ -124,5 +155,6 @@
     </script>
     <script async src='https://www.google-analytics.com/analytics.js'></script>
     <script async src="app/src/js/vendor/autotrack.js"></script>
+
   </body>
 </html>

@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
 }
 
 *, *:before, *:after {
@@ -25,4 +26,8 @@ hr {
 
 img {
   max-width: 100%;
+}
+
+h2 {
+  font-size: 2em;
 }

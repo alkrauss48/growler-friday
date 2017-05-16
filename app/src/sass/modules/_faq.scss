@@ -1,0 +1,18 @@
+.faq {
+  background-color: $dark;
+  padding: 2em 0;
+  color: white;
+}
+
+.faq__heading {
+  color: $yellow;
+}
+
+.faq__title {
+  margin: 1.5em 0 .5em 0;
+  color: $yellow;
+}
+
+.faq__description {
+  line-height: 1.75;
+}

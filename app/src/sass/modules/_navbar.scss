@@ -2,10 +2,26 @@
   // position: fixed;
   background-color: $dark;
   width: 100%;
-  padding: .5em;
+  padding: .5em 1em;
+}
+
+.navbar__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar__logo {
   display: block;
   width: 200px;
+}
+
+.navbar__social-media {
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+  margin-left: .5em;
+  &:hover, &:focus {
+    color: $yellow;
+  }
 }

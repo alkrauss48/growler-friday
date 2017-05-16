@@ -9,7 +9,7 @@ const countdownTimes = [{
   value: '%H',
   caption: 'Hours'
 },{
-  value: '%S',
+  value: '%M',
   caption: 'Minutes'
 },{
   value: '%S',

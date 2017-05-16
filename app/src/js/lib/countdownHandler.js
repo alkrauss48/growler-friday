@@ -23,8 +23,12 @@ function init() {
       countdownTimes.forEach( (timeUnit) => {
         format += `
           <figure class="countdown__item">
-            <h3 class="countdown__unit">${timeUnit.value}</h3>
-            <figcaption class="countdown__caption">${timeUnit.caption}</figcaption>
+            <h3 class="countdown__unit" aria-labelledby="${timeUnit.caption}">
+              ${timeUnit.value}
+            </h3>
+            <figcaption id="${timeUnit.caption}" class="countdown__caption">
+              ${timeUnit.caption}
+            </figcaption>
           </figure>
         `;
       });

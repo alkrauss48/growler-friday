@@ -32,6 +32,11 @@
   margin: 0;
   padding: 1em;
   background-color: $dark;
+  background-image: linear-gradient(
+    to bottom left,
+    $dark 50%,
+    darken($dark, 5%) 50%
+  );
 }
 
 .countdown__caption {

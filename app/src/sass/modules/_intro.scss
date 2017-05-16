@@ -1,13 +1,17 @@
 .intro {
+  background-image: url('/app/images/beer-cheers.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.intro__shading {
+  background-color: rgba($yellow, .85);
   padding: 4em 1em;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $yellow;
-  background-image: linear-gradient(bottom left, $yellow 50%, darken($yellow,
-  13%) 50%);
 }
 
 .intro__heading-icon {

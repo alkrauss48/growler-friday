@@ -4,14 +4,14 @@
 
 .find-a-growler__grid {
   display: flex;
-  flex-grow: 1;
   justify-content: space-between;
 }
 
 .find-a-growler__content {
   margin-right: 1em;
+  width: 40%;
 }
 
 .find-a-growler__heading {
-  max-width: 60%;
+  max-width: 80%;
 }

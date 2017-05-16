@@ -1,3 +1,13 @@
 .is-accessible-hidden {
   @include accessible-hidden;
 }
+
+.is-friday {
+  .countdown__friday {
+    display: block;
+  }
+
+  .countdown__not-friday {
+    display: none;
+  }
+}

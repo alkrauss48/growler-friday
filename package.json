@@ -31,5 +31,9 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "private": "true",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.18.1",
+    "twit": "^2.2.5"
+  }
 }

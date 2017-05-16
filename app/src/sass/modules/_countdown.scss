@@ -5,6 +5,11 @@
   // background-image: linear-gradient(top left, white 50%, darken(white, 8%) 50%);
 }
 
+.countdown__friday {
+  display: none;
+  font-size: 4em;
+}
+
 .countdown__clock {
   display: flex;
   max-width: 48em;

@@ -12,6 +12,11 @@ $(document).ready(function(){
   twitterHandler.init();
   instagramHandler.init();
 
+  $('#searchForm').submit( (event) => {
+    event.preventDefault();
+    mapHandler.search($('#zipCode').val());
+  });
+
   // Remove 'focus' styles when you click a link
   $('a, button').mouseup(function() { this.blur() });
 });

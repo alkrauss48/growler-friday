@@ -1,16 +1,20 @@
 export const mapHandler = {
-  init
+  init,
+  search
 };
+
+let mapOptions;
+let map;
 
 function init() {
   // Set basic map attributes
-  var mapOptions = {
+  mapOptions = {
     zoom: 10,
     center: new google.maps.LatLng(35.4822, -97.5350),
     styles: mapStyles
   };
 
-  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+  map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
   var star = {
     path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
@@ -25,6 +29,22 @@ function init() {
     position: new google.maps.LatLng(35.4822, -97.5350),
     icon:     star,
     map:      map
+  });
+}
+
+function search(zipCode) {
+
+  const geocoder = new google.maps.Geocoder();
+
+  geocoder.geocode({ 'address': zipCode }, (results, status) => {
+    if (status === 'OK' && results.length > 0) {
+      const coords = {
+        lat: results[0].geometry.location.lat(),
+        lng: results[0].geometry.location.lng()
+      };
+
+      map.setCenter({lat: coords.lat, lng: coords.lng});
+    }
   });
 }
 

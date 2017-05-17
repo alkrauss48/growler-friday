@@ -7,7 +7,12 @@
 
 .countdown__friday {
   display: none;
-  font-size: 4em;
+}
+
+.countdown__friday-heading {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 6em;
 }
 
 .countdown__clock {

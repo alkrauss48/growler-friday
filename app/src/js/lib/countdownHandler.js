@@ -17,7 +17,7 @@ const countdownTimes = [{
 }];
 
 function init() {
-  if( moment().day() == 5 ) {
+  if( moment().day() == 3 ) {
     $('.countdown').addClass('is-friday');
   } else {
     $('#clock').countdown(new Date(moment().day('Friday').startOf('day')))

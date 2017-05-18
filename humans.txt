@@ -1,15 +1,15 @@
 # humanstxt.org/
 
 /* TEAM */
-Your title:   Staplegun
-Site:         http://staplegun.us/
-Github:       https://github.com/Staplegun-US
-Twitter:      @staplegun_us
+Your title:   thecodeboss
+Site:         https://thesocietea.org
+Github:       https://github.com/alkrauss48
+Twitter:      @thecodeboss
 Location:     Oklahoma City, OK, US
 
 
 /* THANKS */
-Name:         Staplegun Interactive Team - (Jack, Koty, Darren, Aaron)
+Name:         Aaron Krauss
 
 
 /* SITE */

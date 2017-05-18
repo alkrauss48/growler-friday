@@ -16,19 +16,27 @@ function init() {
 
   map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
-  var star = {
-    path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
-    fillColor: 'yellow',
-    fillOpacity: .75,
-    scale: .15,
-    strokeWeight: 0
-  };
+  $.getJSON('/public/growler-locations.json', (data) => {
+    data.forEach( (record) => {
+      // Create a marker
+      console.log(record);
+      let infoWindow = new google.maps.InfoWindow({
+        content: `
+          <h3 class="map__caption-title">${record.name}</h3>
+          <p class="map__caption-text">${record.address}</p>
+          <p class="map__caption-text">${record.phone}</p>
+        `
+      });
 
-  // Create a marker
-  var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(35.4822, -97.5350),
-    icon:     star,
-    map:      map
+      let marker = new google.maps.Marker({
+        position: new google.maps.LatLng(record.lat, record.lng),
+        map:      map
+      });
+
+      marker.addListener('click', () => {
+        infoWindow.open(map, marker);
+      });
+    });
   });
 }
 

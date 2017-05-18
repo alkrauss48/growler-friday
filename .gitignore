@@ -8,6 +8,7 @@ venv
 .Trashes
 *.pyc
 .idea
+conf.json
 
 node_modules/
 bower_components/

@@ -1,3 +1,28 @@
 .showcase {
   padding: 2em 1em;
 }
+
+.showcase__item {
+  margin: 0 1em;
+  height: 250px;
+  width: auto;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: $dark;
+  font-family: 'base-icon-fonts';
+}
+
+.slick-prev {
+  left: -40px;
+  &:before {
+    content: "\f053";
+  }
+}
+
+.slick-next {
+  right: -40px;
+  &:before {
+    content: "\f054";
+  }
+}

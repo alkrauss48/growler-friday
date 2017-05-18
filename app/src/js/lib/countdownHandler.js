@@ -2,7 +2,9 @@ export var countdownHandler = {
   init
 };
 
-const countdownTimes = [{
+const FRIDAY = 5;
+
+const COUNTDOWN_TIMES = [{
   value: '%-d',
   caption: 'Day%!d'
 },{
@@ -17,13 +19,14 @@ const countdownTimes = [{
 }];
 
 function init() {
-  if( moment().day() == 5 ) {
+
+  if( moment().day() == FRIDAY ) {
     $('.countdown').addClass('is-friday');
   } else {
-    $('#clock').countdown(new Date(moment().day('Friday').startOf('day')))
+    $('#clock').countdown(getNextFriday())
       .on('update.countdown', function(event) {
         let format = ''
-        countdownTimes.forEach( (timeUnit) => {
+        COUNTDOWN_TIMES.forEach( (timeUnit) => {
           format += `
             <figure class="countdown__item">
               <h3 class="countdown__unit" aria-labelledby="${timeUnit.caption}">
@@ -40,5 +43,17 @@ function init() {
       .on('finish.countdown', function(event) {
         $('.countdown').addClass('is-friday');
       });
+  }
+}
+
+function getNextFriday() {
+
+  // if we haven't yet passed the day of the week that I need:
+  if (moment().isoWeekday() <= FRIDAY) {
+    // then just give me this week's instance of that day
+    return new Date(moment().isoWeekday(FRIDAY).startOf('day'));
+  } else {
+    // otherwise, give me next week's instance of that day
+    return new Date(moment().add(1, 'weeks').isoWeekday(FRIDAY).startOf('day'));
   }
 }

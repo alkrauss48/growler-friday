@@ -8,6 +8,7 @@
     "susy": "~2.2.12",
     "es5-shim": "~4.5.9",
     "breakpoint-sass": "~2.7.1",
-    "jquery.countdown": "^2.2.0"
+    "jquery.countdown": "^2.2.0",
+    "slick-carousel": "^1.6.0"
   }
 }

@@ -4,6 +4,7 @@ import {countdownHandler} from "./lib/countdownHandler.js";
 import {mapHandler} from "./lib/mapHandler.js";
 import {twitterHandler} from "./lib/twitterHandler.js";
 import {instagramHandler} from "./lib/instagramHandler.js";
+import {showcaseHandler} from "./lib/showcaseHandler.js";
 
 $(document).ready(function(){
   skipMenuHandler.init();
@@ -11,6 +12,7 @@ $(document).ready(function(){
   mapHandler.init();
   twitterHandler.init();
   instagramHandler.init();
+  showcaseHandler.init();
 
   $('#searchForm').submit( (event) => {
     event.preventDefault();

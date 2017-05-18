@@ -33,6 +33,7 @@
   "private": "true",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.15.3",
     "moment": "^2.18.1",
     "twit": "^2.2.5"
   }

@@ -15,3 +15,28 @@
 .latest-feeds__heading {
   color: $yellow;
 }
+
+.latest-feeds__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-feeds__item {
+  color: $dark;
+  margin: 0;
+  width: 30%;
+  padding: 1em;
+  background-color: white;
+  border-radius: 1px;
+  font-style: italic;
+}
+
+.latest-feeds__text {
+  background-color: lighten($dark, 75%);
+  padding: .5em;
+  margin: 0;
+}
+
+.latest-feeds__caption {
+  margin-top: 1em;
+}

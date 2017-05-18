@@ -1,15 +1,17 @@
-// var Twit = require('twit')
-//
-// var T = new Twit({
-//   timeout_ms:           30*1000
-// });
-
 export const twitterHandler = {
   init
 };
 
 function init() {
-  // T.get('search/tweets', { q: 'growlerfriday', count: 6 }, function(err, data, response) {
-  //   console.log(data)
-  // });
+  $.get('http://localhost:3005/get-tweets', (response) => {
+    console.log(response)
+    response.statuses.forEach( (status) => {
+      $('#twitterFeeds').append(`
+        <figure class="latest-feeds__item">
+          <p class="latest-feeds__text">${status.text}</p>
+          <figcaption class="latest-feeds__caption">- @${status.user.screen_name}</figcaption>
+        </figure>
+      `);
+    });
+  });
 }

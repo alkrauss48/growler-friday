@@ -9,7 +9,7 @@ let map;
 function init() {
   // Set basic map attributes
   mapOptions = {
-    zoom: 10,
+    zoom: 12,
     center: new google.maps.LatLng(35.4822, -97.5350),
     styles: mapStyles
   };

@@ -58,4 +58,34 @@
   "phone": "(405) 232-2739",
   "lat": "35.466761",
   "lng": "-97.510809"
+},{
+  "name": "Iron Monk Brewing Company",
+  "address": "519 S Husband St, Stillwater, OK 74074",
+  "phone": "(405) 714-2585",
+  "lat": "36.116508",
+  "lng": "-97.059958"
+},{
+  "name": "Dead Armadillo Craft Brewing",
+  "address": "1004 E 4th St, Tulsa, OK 74120",
+  "phone": "(918) 232-8627",
+  "lat": "36.155386",
+  "lng": "-95.979395"
+},{
+  "name": "Marshall Brewing Company",
+  "address": "618 S Wheeling Ave, Tulsa, OK 74104",
+  "phone": "(918) 292-8781",
+  "lat": "36.151586",
+  "lng": "-95.965187"
+},{
+  "name": "Prairie Brewpub",
+  "address": "223 N Main St, Tulsa, OK 74103",
+  "phone": "(918) 936-4395",
+  "lat": "36.159188",
+  "lng": "-95.993579"
+},{
+  "name": "American Solera",
+  "address": "801 S 49th W Ave, Tulsa, OK 74127",
+  "phone": "(918) 949-4318",
+  "lat": "36.146622",
+  "lng": "-96.047191"
 }]

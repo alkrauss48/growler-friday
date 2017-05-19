@@ -1,7 +1,61 @@
 [{
-  "name": "Anthem Brewing",
+  "name": "Anthem Brewing Co.",
   "address": "908 SW 4th St, Oklahoma City, OK 73109",
   "phone": "(405) 604-0446",
   "lat": "35.461075",
   "lng": "-97.528428"
+},{
+  "name": "Roughtail Brewing Co.",
+  "address": "1279 N Air Depot Blvd, Oklahoma City, OK 73110",
+  "phone": "(405) 771-6517",
+  "lat": "35.480310",
+  "lng": "-97.406493"
+},{
+  "name": "Mustang Brewery",
+  "address": "520 N Meridian Ave, Oklahoma City, OK 73107",
+  "phone": "(405) 943-0100",
+  "lat": "35.472865",
+  "lng": "-97.603536"
+},{
+  "name": "Elk Valley Brewing Company",
+  "address": "520 N Meridian Ave, Oklahoma City, OK 73107",
+  "phone": "(405) 209-0016",
+  "lat": "35.472865",
+  "lng": "-97.600536"
+},{
+  "name": "(405) Brewing Co., LLC",
+  "address": "1716 Topeka St, Norman, OK 73069",
+  "phone": "(405) 209-0016",
+  "lat": "35.257365",
+  "lng": "-97.468197"
+},{
+  "name": "Twisted Spike Brewery",
+  "address": "1 NW 10th St, Oklahoma City, OK 73103",
+  "phone": "(405) 301-3467",
+  "lat": "35.478371",
+  "lng": "-97.512268"
+},{
+  "name": "COOP Ale Works",
+  "address": "4745 Council Heights Rd, Oklahoma City, OK 73179",
+  "phone": "(405) 842-2667",
+  "lat": "35.418576",
+  "lng": "-97.657841"
+},{
+  "name": "Belle Isle Restaurant & Brewery",
+  "address": "1900 Northwest Expy # 44R, Oklahoma City, OK 73118",
+  "phone": "(405) 840-1911",
+  "lat": "35.521963",
+  "lng": "-97.545760"
+},{
+  "name": "Royal Bavaria",
+  "address": "3401 S Sooner Rd, Oklahoma City, OK 73165",
+  "phone": "(405) 799-7666",
+  "lat": "35.306047",
+  "lng": "-97.424139"
+},{
+  "name": "Bricktown Brewery",
+  "address": "1 N Oklahoma Ave, Oklahoma City, OK 73104",
+  "phone": "(405) 232-2739",
+  "lat": "35.466761",
+  "lng": "-97.510809"
 }]

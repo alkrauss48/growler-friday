@@ -11,6 +11,12 @@ var T = new Twit({
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 });
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", '*');
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.get('/get-tweets', function (req, res) {
   T.get('search/tweets', { q: '#growlerfriday', count: 3, result_type: 'recent'}, function(err, data, response) {
     res.send(data)

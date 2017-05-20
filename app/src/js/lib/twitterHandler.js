@@ -3,7 +3,7 @@ export const twitterHandler = {
 };
 
 function init() {
-  $.get('http://localhost:3005/get-tweets', (response) => {
+  $.get('http://growlerfriday.com:3005/get-tweets', (response) => {
     console.log(response)
     response.statuses.forEach( (status) => {
       $('#twitterFeeds').append(`

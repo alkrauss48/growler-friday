@@ -1,18 +1,19 @@
 {
-  "name": "site-start",
-  "version": "2.0.0-rc1",
-  "author": "Staplegun.US",
-  "descripton": "A Boilerplate starter-kit for starting development right - the Staplegun way. Includes build automation and common CSS and JS libraries",
-  "homepage": "https://github.com/Staplegun-US/site-start",
+  "name": "growlerfriday-server",
+  "version": "1.0.0",
+  "author": "@thecodeboss",
+  "descripton": "The server for growlerfriday.com",
+  "homepage": "http://growlerfriday.com",
   "scripts": {
-    "start": "npm install && bower install"
+    "install": "npm install && bower install" ,
+    "start": "node server"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Staplegun-US/site-start"
+    "url": "https://github.com/alkrauss48/growler-friday"
   },
   "bugs": {
-    "url": "https://github.com/Staplegun-US/site-start/issues"
+    "url": "https://github.com/alkrauss48/growler-friday/issues"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.0",

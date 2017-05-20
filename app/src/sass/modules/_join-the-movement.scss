@@ -17,4 +17,13 @@
   font-style: italic;
   text-shadow: 2px 2px lighten($dark, 20%);
   margin: 0;
+
+  @include breakpoint($second-breakpoint) {
+    font-size: 2em;
+  }
+
+  @include breakpoint($third-breakpoint) {
+    font-size: 1.25em;
+  text-shadow: 1px 1px lighten($dark, 20%);
+  }
 }

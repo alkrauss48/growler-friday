@@ -1,6 +1,11 @@
 .map {
   width: 60%;
   margin-left: 1em;
+  @include breakpoint($second-breakpoint) {
+    width: 100%;
+    height: 15em;
+    margin: 0;
+  }
 }
 
 .map__caption-title {

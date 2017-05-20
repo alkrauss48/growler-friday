@@ -14,8 +14,14 @@
 .navbar__logo {
   display: block;
   width: 200px;
+  @include breakpoint($third-breakpoint) {
+    width: 150px;
+  }
 }
 
 .navbar__social-media {
   font-size: 2em;
+  @include breakpoint($third-breakpoint) {
+    font-size: 1.5em;
+  }
 }

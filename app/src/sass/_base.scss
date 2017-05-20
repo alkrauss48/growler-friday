@@ -30,4 +30,7 @@ img {
 h2 {
   font-size: 2em;
   letter-spacing: 1px;
+  @include breakpoint($third-breakpoint) {
+    font-size: 1.5em;
+  }
 }

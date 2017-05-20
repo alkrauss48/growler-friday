@@ -12,11 +12,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include breakpoint($third-breakpoint) {
+    padding: 2em 1em;
+  }
 }
 
 .intro__heading-icon {
   width: 80px;
   display: inline-block;
+  @include breakpoint($third-breakpoint) {
+    width: 50px;
+  }
 }
 
 .intro__title {
@@ -24,6 +30,9 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: .25em 0;
+  @include breakpoint($third-breakpoint) {
+    font-size: 2em;
+  }
 }
 
 .intro__tagline {

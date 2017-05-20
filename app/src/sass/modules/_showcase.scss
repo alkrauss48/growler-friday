@@ -1,11 +1,27 @@
 .showcase {
-  padding: 2em 1em;
+  padding: 2em 0;
 }
 
 .showcase__item {
   margin: 0 1em;
   height: 250px;
   width: auto;
+
+  @include breakpoint($second-breakpoint) {
+    height: 200px;
+    margin: 0 .5em;
+  }
+
+  @include breakpoint($third-breakpoint) {
+    height: 150px;
+  }
+}
+
+.showcase__container {
+  @include breakpoint($first-breakpoint) {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
 }
 
 .slick-prev:before, .slick-next:before {

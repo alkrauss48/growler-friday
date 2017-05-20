@@ -13,23 +13,35 @@
   margin: 0;
   padding: 1em 0;
   font-size: 6em;
+  @include breakpoint($second-breakpoint) {
+    font-size: 3em;
+  }
+  @include breakpoint($third-breakpoint) {
+    font-size: 2em;
+  }
 }
 
 .countdown__clock {
   display: flex;
+  flex-wrap: wrap;
   max-width: 48em;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .countdown__item {
-  margin: 1em;
-  width: 25%;
+  margin: 0;
+  width: 22%;
   display: inline-block;
   border-radius: 3px;
   color: $yellow;
   padding: 1em;
   background-color: lighten($dark, 25%);
+
+  @include breakpoint($third-breakpoint) {
+    width: 48%;
+    margin-bottom: 1em;
+  }
 }
 
 .countdown__item + .countdown__item + .countdown__item + .countdown__item {
@@ -40,19 +52,31 @@
   border-radius: 3px;
   font-size: 2em;
   margin: 0;
-  padding: 1em;
+  padding: 1em 0;
   background-color: $dark;
   background-image: linear-gradient(
     to bottom left,
     $dark 50%,
     darken($dark, 5%) 50%
   );
+
+  @include breakpoint($second-breakpoint) {
+    font-size: 1.5em;
+  }
 }
 
 .countdown__caption {
   padding: .8em 0 0 0;
   margin: 0;
   font-size: 1.25em;
+
+  @include breakpoint($second-breakpoint) {
+    font-size: .75em;
+  }
+
+  @include breakpoint($third-breakpoint) {
+    font-size: 1em;
+  }
 }
 
 .countdown__title {

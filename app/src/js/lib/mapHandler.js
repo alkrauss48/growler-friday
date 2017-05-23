@@ -3,12 +3,12 @@ export const mapHandler = {
   search
 };
 
-let mapOptions;
 let map;
+let infoWindows = [];
 
 function init() {
   // Set basic map attributes
-  mapOptions = {
+  const mapOptions = {
     zoom: 12,
     center: new google.maps.LatLng(35.4822, -97.5350),
     styles: mapStyles
@@ -27,16 +27,21 @@ function init() {
         `
       });
 
+      infoWindows.push(infoWindow);
+
       let marker = new google.maps.Marker({
         position: new google.maps.LatLng(record.lat, record.lng),
         map:      map
       });
 
       marker.addListener('click', () => {
+        closeInfoWindows();
         infoWindow.open(map, marker);
       });
     });
   });
+
+  map.addListener("click", closeInfoWindows);
 }
 
 function search(zipCode) {
@@ -53,6 +58,14 @@ function search(zipCode) {
       map.setCenter({lat: coords.lat, lng: coords.lng});
     }
   });
+}
+
+// Private
+
+function closeInfoWindows() {
+  for (var i = 0; i < infoWindows.length; i++ ) {
+    infoWindows[i].close();
+  }
 }
 
 const mapStyles = [

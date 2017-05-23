@@ -8,14 +8,14 @@
 
     <title>Growler Friday</title>
 
-    <meta name="description" content="The proper way to start your weekend.">
+    <meta name="description" content="Growler Friday is a celebration akin to sitting around a campfire with friends - but instead of a fire, there’s a growler! Pop it open, pour one for your buddies, and sit back and relax; it’s as easy as that.">
 
     <!-- Test your adherence to Open Graph here: https://developers.facebook.com/tools/debug/og/object -->
     <meta property="og:image" content="http://growlerfriday.com/app/images/growler-friday-og-image.jpg">
     <meta property="og:title" content="Growler Friday">
     <meta property="og:url"   content="http://growlerfriday.com">
     <meta property="og:type"  content="website">
-    <meta property="og:description"  content="The proper way to start your weekend.">
+    <meta property="og:description"  content="Growler Friday is a celebration akin to sitting around a campfire with friends - but instead of a fire, there’s a growler! Pop it open, pour one for your buddies, and sit back and relax; it’s as easy as that.">
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@growlerfriday" />
@@ -36,9 +36,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   </head>
   <body>
-    <div class="skipmenu" aria-hidden="true">
-      <a href="#content" class="skipmenu__item">Skip to Main Content</a>
-    </div>
     <!--[if lt IE 8]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -120,12 +117,12 @@
             but not all of them. Enter your zip code to see what's available near you.</p>
             <p class="find-a-growler__text"><em>Currently only showing locations
               for Oklahoma zip codes</em>.</p>
-            <form id="searchForm" class="form" action="" method="post">
+            <form role="search" id="searchForm" class="form" action="" method="post">
               <div class="form__group">
                 <label class="form__label" for="zipCode">Zip Code</label>
-                <input class="form__input" type="text" name="zipCode" id="zipCode" value="">
-                <button class="form__submit"
-                  type="submit">Search </button>
+                <input class="form__input" type="text" name="zipCode"
+                  id="zipCode" value="" required aria-required>
+                <button class="form__submit" type="submit">Search</button>
               </div>
             </form>
           </div>

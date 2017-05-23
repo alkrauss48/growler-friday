@@ -19,7 +19,6 @@ function init() {
   $.getJSON('/public/growler-locations.json', (data) => {
     data.forEach( (record) => {
       // Create a marker
-      console.log(record);
       let infoWindow = new google.maps.InfoWindow({
         content: `
           <h3 class="map__caption-title">${record.name}</h3>

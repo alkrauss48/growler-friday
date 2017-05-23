@@ -24,5 +24,5 @@ app.get('/get-tweets', function (req, res) {
 });
 
 app.listen(3005, function () {
-  console.log('Example app listening on port 3005!')
+  console.log('Listening on port 3005!')
 });

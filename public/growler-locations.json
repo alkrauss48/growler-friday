@@ -1,91 +1,162 @@
 [{
   "name": "Anthem Brewing Co.",
   "address": "908 SW 4th St, Oklahoma City, OK 73109",
+  "fillType": "Growler",
   "phone": "(405) 604-0446",
   "lat": "35.461075",
   "lng": "-97.528428"
 },{
   "name": "Roughtail Brewing Co.",
   "address": "1279 N Air Depot Blvd, Oklahoma City, OK 73110",
+  "fillType": "Crowler",
   "phone": "(405) 771-6517",
   "lat": "35.480310",
   "lng": "-97.406493"
 },{
-  "name": "Mustang Brewery",
-  "address": "520 N Meridian Ave, Oklahoma City, OK 73107",
-  "phone": "(405) 943-0100",
-  "lat": "35.472865",
-  "lng": "-97.603536"
+  "name": "Stonecloud Brewing Company",
+  "address": "1012 NW 1st St Suite 101, Oklahoma City, OK 73106",
+  "fillType": "Crowler",
+  "phone": "(405) 602-3966",
+  "lat": "35.468607",
+  "lng": "-97.529209"
 },{
-  "name": "Elk Valley Brewing Company",
+  "name": "Elk Valley Brewing Company<br />Angry Scotsman Brewing<br />Vanessa House Beer Company",
   "address": "520 N Meridian Ave, Oklahoma City, OK 73107",
+  "fillType": "Growler",
   "phone": "(405) 209-0016",
   "lat": "35.472865",
   "lng": "-97.600536"
 },{
   "name": "(405) Brewing Co., LLC",
   "address": "1716 Topeka St, Norman, OK 73069",
+  "fillType": "Growler",
   "phone": "(405) 209-0016",
   "lat": "35.257365",
   "lng": "-97.468197"
 },{
   "name": "Twisted Spike Brewery",
   "address": "1 NW 10th St, Oklahoma City, OK 73103",
+  "fillType": "Growler",
   "phone": "(405) 301-3467",
   "lat": "35.478371",
   "lng": "-97.512268"
 },{
   "name": "COOP Ale Works",
   "address": "4745 Council Heights Rd, Oklahoma City, OK 73179",
+  "fillType": "Crowler",
   "phone": "(405) 842-2667",
   "lat": "35.418576",
   "lng": "-97.657841"
 },{
   "name": "Belle Isle Restaurant & Brewery",
   "address": "1900 Northwest Expy # 44R, Oklahoma City, OK 73118",
+  "fillType": "Growler",
   "phone": "(405) 840-1911",
   "lat": "35.521963",
   "lng": "-97.545760"
 },{
   "name": "Royal Bavaria",
   "address": "3401 S Sooner Rd, Oklahoma City, OK 73165",
+  "fillType": "Growler",
   "phone": "(405) 799-7666",
   "lat": "35.306047",
   "lng": "-97.424139"
 },{
   "name": "Bricktown Brewery",
   "address": "1 N Oklahoma Ave, Oklahoma City, OK 73104",
+  "fillType": "Growler",
   "phone": "(405) 232-2739",
   "lat": "35.466761",
   "lng": "-97.510809"
 },{
   "name": "Iron Monk Brewing Company",
   "address": "519 S Husband St, Stillwater, OK 74074",
+  "fillType": "Growler & Crowler",
   "phone": "(405) 714-2585",
   "lat": "36.116508",
   "lng": "-97.059958"
 },{
   "name": "Dead Armadillo Craft Brewing",
   "address": "1004 E 4th St, Tulsa, OK 74120",
+  "fillType": "Growler",
   "phone": "(918) 232-8627",
   "lat": "36.155386",
   "lng": "-95.979395"
 },{
+  "name": "Cabin Boys Brewery",
+  "address": "1717 East 7th Street Tulsa, OK, 74104",
+  "fillType": "Growler",
+  "phone": "(918) 933-4033",
+  "lat": "36.151592",
+  "lng": "-95.966860"
+},{
+  "name": "Renaissance Brewing Co.",
+  "address": "1147 S Lewis Ave, Tulsa, OK, 74104",
+  "fillType": "Growler",
+  "phone": "(918) 409-0551",
+  "lat": "36.146226",
+  "lng": "-95.958041"
+},{
+  "name": "Heirloom Rustic Ales",
+  "address": "2113 E. Admiral Blvd Tulsa, OK, 74110",
+  "fillType": "Crowler",
+  "phone": "(918) 292-8757",
+  "lat": "36.159979",
+  "lng": "-95.961156"
+},{
   "name": "Marshall Brewing Company",
   "address": "618 S Wheeling Ave, Tulsa, OK 74104",
+  "fillType": "Growler",
   "phone": "(918) 292-8781",
   "lat": "36.151586",
   "lng": "-95.965187"
 },{
   "name": "Prairie Brewpub",
   "address": "223 N Main St, Tulsa, OK 74103",
+  "fillType": "Crowler",
   "phone": "(918) 936-4395",
   "lat": "36.159188",
   "lng": "-95.993579"
 },{
-  "name": "American Solera",
-  "address": "801 S 49th W Ave, Tulsa, OK 74127",
+  "name": "Prairie Artisan Ales",
+  "address": "3 NE 8th St, Oklahoma City, OK 73104",
+  "fillType": "Crowler",
+  "phone": "(405) 602-0894",
+  "lat": "35.476332",
+  "lng": "-97.511780"
+},{
+  "name": "Beavers Bend Brewery",
+  "address": "46 Coho Rd, Broken Bow, OK 74728",
+  "fillType": "Growler",
+  "phone": "(580) 494-3455",
+  "lat": "34.165807",
+  "lng": "-94.759550"
+},{
+  "name": "Mountain Fork Brewery",
+  "address": "85 N Lukfata Trail, Broken Bow, OK 74728",
+  "fillType": "Growler & Crowler",
+  "phone": "(580) 494-3233",
+  "lat": "34.182771",
+  "lng": "-94.776522"
+},{
+  "name": "Fat Toad Brewery",
+  "address": "3986 West 530 Road, On State highway 69a, Pryor, OK 74361",
+  "fillType": "Growler",
+  "phone": "(918) 864-1308",
+  "lat": "36.249319",
+  "lng": "-95.345041"
+},{
+  "name": "American Solera - SoBo",
+  "address": "108 E 18th St Tulsa, OK, 74119",
+  "fillType": "Growler",
+  "phone": "(918) 779-7763",
+  "lat": "36.135900",
+  "lng": "-95.985179"
+},{
+  "name": "American Solera - River West",
+  "address": "1801 S 49th W Ave, Tulsa, OK 74127",
+  "fillType": "Growler",
   "phone": "(918) 949-4318",
-  "lat": "36.146622",
-  "lng": "-96.047191"
+  "lat": "36.137358",
+  "lng": "-96.046299"
 }]

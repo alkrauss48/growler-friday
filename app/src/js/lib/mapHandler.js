@@ -22,6 +22,7 @@ function init() {
       let infoWindow = new google.maps.InfoWindow({
         content: `
           <h3 class="map__caption-title">${record.name}</h3>
+          <p class="map__caption-text">Fill Type: ${record.fillType}</p>
           <p class="map__caption-text">${record.address}</p>
           <p class="map__caption-text">${record.phone}</p>
         `
@@ -31,6 +32,7 @@ function init() {
 
       let marker = new google.maps.Marker({
         position: new google.maps.LatLng(record.lat, record.lng),
+        fillColor: "blue",
         map:      map
       });
 

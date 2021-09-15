@@ -3,4 +3,7 @@
 
 The Proper Way to Start Your Weekend
 
-Coming Soon
+## To Run
+```
+docker-compose up
+```

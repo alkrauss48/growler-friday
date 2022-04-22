@@ -5,7 +5,6 @@
   "descripton": "The server for growlerfriday.com",
   "homepage": "http://growlerfriday.com",
   "scripts": {
-    "install": "npm install && bower install" ,
     "start": "node server"
   },
   "repository": {

@@ -22,7 +22,7 @@
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.11",
     "browserify": "^14.3.0",
-    "gulp": "3.9.1",
+    "gulp": "4.0.2",
     "gulp-postcss": "^7.0.0",
     "gulp-sass": "3.1.0",
     "gulp-sourcemaps": "^2.6.0",
